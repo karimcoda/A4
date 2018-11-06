@@ -1,0 +1,49 @@
+body{
+	background-color: #eee;
+}
+h1{
+	text-align: center;
+	border-bottom: 2px solid #666;
+	margin: 0 2em;
+	padding: 1em;
+}
+.rating_scale{
+	display: block;
+	text-align: center;
+	font-size: 0;
+	font-weight: 800;
+}
+.rating_scale span{
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 1em;
+	font-size: 16px;
+	background-color: #666;
+	color: #eee;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #555;
+	border-right: 1px solid #555;
+	box-shadow: inset 1px 0 1px #999, inset 0 1px 0 #ccc, inset 0 -1px 0 #333;
+}
+.rating_scale label:first-child span{
+	border-left: 1px solid #555;
+	border-top-left-radius: 0.25em;
+	border-bottom-left-radius: 0.25em;
+}
+.rating_scale label:last-child span{
+	border-top-right-radius: 0.25em;
+	border-bottom-right-radius: 0.25em;
+}
+.rating_scale input[type='radio']{
+	display: none;
+}
+.rating_scale input[type='radio']:checked ~ span{
+	background-color: #eee;
+	color: #333;
+	box-shadow: inset 0 1px 0 #999, inset 2px 0 2px #999, inset 0 -1px 0 #fff;
+}
+.rating_scale input[type='radio']:hover ~ span{
+	background-color: #eee;
+	color: #333;
+	box-shadow: inset 0 1px 0 #999, inset 2px 0 2px #999, inset 0 -1px 0 #fff;
+}
